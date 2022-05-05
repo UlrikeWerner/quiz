@@ -12,6 +12,8 @@
 
 .profile-image {
   width: 30vw;
+  border: 2px solid var(--border-color);
+  border-radius: 5%;
 }
 
 .profile-image path {
