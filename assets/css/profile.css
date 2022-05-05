@@ -1,0 +1,23 @@
+@import "button.css";
+@import "color-chart.css";
+@import "flex.css";
+@import "layout.css";
+@import "nav.css";
+@import "svg.css";
+@import "tag.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.profile-image {
+  width: 30vw;
+}
+
+.profile-image path {
+  d: var(--svg-blank-user-image);
+}
+
+.skills {
+  margin-bottom: 3em;
+}
