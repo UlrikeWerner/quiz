@@ -48,7 +48,7 @@
   background-color: var(--action-color);
 }
 
-.answer-hidden {
+.answer.__hidden {
   visibility: hidden;
 }
 
