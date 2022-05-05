@@ -1,0 +1,48 @@
+:root {
+  --bookmark-unmarked-color: white;
+  --bookmark-marked-color: black;
+}
+
+.card {
+  position: relative;
+  border: 2px solid var(--border-color);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.bookmark {
+  position: absolute;
+  top: -1.2em;
+  right: 1em;
+  width: 3em;
+}
+
+.bookmark svg {
+  position: absolute;
+}
+
+.bookmark svg.bookmark-background {
+  fill: var(--bookmark-unmarked-color);
+}
+
+.bookmark.marked svg.bookmark-background {
+  fill: var(--bookmark-marked-color);
+}
+
+.answer-hidden {
+  visibility: hidden;
+}
+
+.tag {
+  border: 1px solid var(--border-color);
+  border-radius: 50vh;
+  padding: 0.1em 0.5em;
+}
+
+.bookmark-background path {
+  d: var(--svg-bookmark-filled);
+}
+
+.bookmark-outline path {
+  d: var(--svg-bookmark);
+}

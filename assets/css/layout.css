@@ -1,0 +1,14 @@
+header {
+  background-color: var(--main-color);
+}
+
+main {
+  flex-grow: 1;
+  padding: 1em 2em;
+  overflow-y: auto;
+}
+
+.body-wrapper {
+  height: 100vh;
+  margin: -8px;
+}
