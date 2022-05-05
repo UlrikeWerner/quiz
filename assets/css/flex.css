@@ -8,10 +8,6 @@
   flex-direction: row;
 }
 
-.flex {
-  display: flex;
-}
-
 .row-gap-1_2 {
   row-gap: 1.2em;
 }
@@ -20,10 +16,18 @@
   column-gap: 0.8em;
 }
 
+.column-gap-1_5 {
+  column-gap: 1.5em;
+}
+
 .justify-content-center {
   justify-content: center;
 }
 
 .justify-content-space-around {
   justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
 }
