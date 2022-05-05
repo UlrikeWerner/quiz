@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
     <title>Quiz App</title>
   </head>
 
@@ -17,10 +17,10 @@
       <main class="flex-column row-gap-1_2">
         <section class="card">
           <div class="bookmark">
-            <svg class="link-bookmarks-active" viewBox="0 0 24 24">
+            <svg class="bookmark-background" viewBox="0 0 24 24">
               <path />
             </svg>
-            <svg class="link-bookmarks-inactive" viewBox="0 0 24 24">
+            <svg class="bookmark-outline" viewBox="0 0 24 24">
               <path />
             </svg>
           </div>
@@ -29,7 +29,9 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nemo
             magni quae tenetur illum reicien.
           </p>
-          <button type="button">Hide Answer</button>
+          <div class="flex justify-content-center">
+            <button type="button" class="button">Hide Answer</button>
+          </div>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             similique exercitationem id
@@ -42,10 +44,10 @@
 
         <section class="card">
           <div class="bookmark">
-            <svg class="link-bookmarks-active" viewBox="0 0 24 24">
+            <svg class="bookmark-background" viewBox="0 0 24 24">
               <path />
             </svg>
-            <svg class="link-bookmarks-inactive" viewBox="0 0 24 24">
+            <svg class="bookmark-outline" viewBox="0 0 24 24">
               <path />
             </svg>
           </div>
@@ -54,8 +56,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nemo
             magni quae tenetur illum reicien.
           </p>
-          <button type="button">Show Answer</button>
-          <p class="answer-hide">
+          <div class="flex justify-content-center">
+            <button type="button" class="button">Show Answer</button>
+          </div>
+          <p class="answer-hidden">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             similique exercitationem id
           </p>
@@ -69,10 +73,10 @@
 
         <section class="card">
           <div class="bookmark marked">
-            <svg class="link-bookmarks-active" viewBox="0 0 24 24">
+            <svg class="bookmark-background" viewBox="0 0 24 24">
               <path />
             </svg>
-            <svg class="link-bookmarks-inactive" viewBox="0 0 24 24">
+            <svg class="bookmark-outline" viewBox="0 0 24 24">
               <path />
             </svg>
           </div>
@@ -81,8 +85,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nemo
             magni quae tenetur illum reicien.
           </p>
-          <button type="button">Show Answer</button>
-          <p class="answer-hide">
+          <div class="flex justify-content-center">
+            <button type="button" class="button">Show Answer</button>
+          </div>
+          <p class="answer-hidden">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
             similique exercitationem id
           </p>
@@ -95,25 +101,25 @@
       <footer>
         <nav class="flex-row justify-content-space-around">
           <a href="/">
-            <svg class="link-home-active" viewBox="0 0 24 24">
+            <svg class="link-home __active" viewBox="0 0 24 24">
               <path />
             </svg>
           </a>
 
           <a href="/">
-            <svg class="link-bookmarks-inactive" viewBox="0 0 24 24">
+            <svg class="link-bookmarks" viewBox="0 0 24 24">
               <path />
             </svg>
           </a>
 
           <a href="/">
-            <svg class="link-create-inactive" viewBox="0 0 24 24">
+            <svg class="link-create" viewBox="0 0 24 24">
               <path />
             </svg>
           </a>
 
           <a href="/">
-            <svg class="link-profile-inactive" viewBox="0 0 24 24">
+            <svg class="link-profile" viewBox="0 0 24 24">
               <path />
             </svg>
           </a>

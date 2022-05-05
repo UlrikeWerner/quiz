@@ -1,5 +1,7 @@
 :root {
-  --main-color: aquamarine;
-  --action-color: red;
+  --main-color: #c4decf;
+  --header-footer-color: #69947b;
+  --hover-color: #472724;
+  --action-color: #ccc7c2;
   --border-color: black;
 }

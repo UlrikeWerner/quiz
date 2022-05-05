@@ -1,0 +1,10 @@
+@import "card.css";
+@import "color-chart.css";
+@import "flex.css";
+@import "layout.css";
+@import "nav.css";
+@import "svg.css";
+
+* {
+  box-sizing: border-box;
+}
