@@ -1,0 +1,68 @@
+:root {
+  --bookmark-unmarked-color: white;
+  --bookmark-marked-color: black;
+  --card-color: #f0fcf5;
+}
+
+.card {
+  position: relative;
+  background-color: var(--card-color);
+  border: 2px solid var(--border-color);
+  border-radius: 1em;
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  main {
+    flex-direction: row !important;
+    column-gap: 1em;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    max-width: 500px;
+    max-height: 300px;
+  }
+}
+
+.bookmark {
+  position: absolute;
+  top: -1.2em;
+  right: 1em;
+  width: 3em;
+}
+
+.bookmark svg {
+  position: absolute;
+}
+
+.bookmark svg.bookmark-background {
+  fill: var(--bookmark-unmarked-color);
+}
+
+.bookmark.marked svg.bookmark-background {
+  fill: var(--bookmark-marked-color);
+}
+
+.button {
+  background-color: var(--action-color);
+}
+
+.answer-hidden {
+  visibility: hidden;
+}
+
+.tag {
+  background-color: var(--action-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50vh;
+  padding: 0.1em 0.5em;
+}
+
+.bookmark-background path {
+  d: var(--svg-bookmark-filled);
+}
+
+.bookmark-outline path {
+  d: var(--svg-bookmark);
+}
