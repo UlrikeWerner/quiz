@@ -5,3 +5,18 @@ for (const bookmark of bookmarks) {
     bookmark.classList.toggle("marked");
   });
 }
+
+const buttons = document.getElementsByClassName("button");
+const answers = document.getElementsByClassName("answer");
+
+for (let i in buttons) {
+  const btn = buttons[i];
+  btn.addEventListener("click", () => {
+    answers[i].classList.toggle("__hidden");
+    if (btn.firstChild.data === "Show Answer") {
+      btn.firstChild.data = "Hide Answer";
+    } else {
+      btn.firstChild.data = "Show Answer";
+    }
+  });
+}
