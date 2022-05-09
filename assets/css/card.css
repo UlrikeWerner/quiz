@@ -33,6 +33,7 @@
   top: -1.2em;
   right: 1em;
   width: 3em;
+  cursor: pointer;
 }
 
 .bookmark svg {
@@ -41,6 +42,8 @@
 
 .bookmark svg.bookmark-background {
   fill: var(--bookmark-unmarked-color);
+  stroke: black;
+  stroke-width: 0.1em;
 }
 
 .bookmark.marked svg.bookmark-background {
