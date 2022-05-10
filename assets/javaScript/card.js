@@ -13,10 +13,10 @@ for (let i in buttons) {
   const btn = buttons[i];
   btn.addEventListener("click", () => {
     answers[i].classList.toggle("__hidden");
-    if (btn.firstChild.data === "Show Answer") {
-      btn.firstChild.data = "Hide Answer";
+    if (btn.textContent === "Show Answer") {
+      btn.textContent = "Hide Answer";
     } else {
-      btn.firstChild.data = "Show Answer";
+      btn.textContent = "Show Answer";
     }
   });
 }
