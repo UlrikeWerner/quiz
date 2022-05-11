@@ -1,0 +1,33 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "eslint": "npx eslint \"**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlrikeWerner/quiz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UlrikeWerner/quiz/issues"
+  },
+  "homepage": "https://github.com/UlrikeWerner/quiz#readme",
+  "dependencies": {
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^14.8.2",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
+  }
+}
