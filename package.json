@@ -8,7 +8,9 @@
     "prettier:write": "npx prettier --write .",
     "htmlhint": "npx htmlhint \"**/*.html\"",
     "stylelint": "npx stylelint \"**/*.css\"",
-    "eslint": "npx eslint \"**/*.js\""
+    "eslint": "npx eslint \"**/*.js\"",
+    "test": "npm run prettier:write && npm run eslint",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "eslint": "^8.15.0",
     "htmlhint": "^1.1.4",
+    "husky": "^8.0.1",
     "stylelint": "^14.8.2",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0"
