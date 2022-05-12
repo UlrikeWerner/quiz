@@ -37,6 +37,7 @@
   "lint-staged": {
     "*": "prettier --write",
     "*.html": "htmlhint",
+    "*.css": "stylelint",
     "*.js": "eslint --fix"
   }
 }
