@@ -9,7 +9,7 @@
     "htmlhint": "npx htmlhint \"**/*.html\"",
     "stylelint": "npx stylelint \"**/*.css\"",
     "eslint": "npx eslint \"**/*.js\"",
-    "test": "npm run prettier:write && npm run eslint",
+    "test": "npm run prettier:write && npm run htmlhint && npm run eslint",
     "prepare": "husky install"
   },
   "repository": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/UlrikeWerner/quiz#readme",
   "dependencies": {
+    "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
   },
   "devDependencies": {
@@ -32,5 +33,10 @@
     "stylelint": "^14.8.2",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^25.0.0"
+  },
+  "lint-staged": {
+    "*": "prettier --write",
+    "*.html": "htmlhint",
+    "*.js": "eslint --fix"
   }
 }
