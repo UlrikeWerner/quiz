@@ -1,5 +1,5 @@
-@import "tag.css";
-@import "button.css";
+@import 'tag.css';
+@import 'button.css';
 
 :root {
   --bookmark-unmarked-color: white;
@@ -10,23 +10,19 @@
 .card {
   position: relative;
   background-color: var(--card-color);
+  max-width: 500px;
+  max-height: 300px;
   border: 2px solid var(--border-color);
   border-radius: 1em;
   padding: 1em;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   main {
     flex-direction: row !important;
     column-gap: 1em;
     flex-wrap: wrap;
-  }
-
-  .card {
-    max-width: 500px;
-    max-height: 300px;
-  }
-}
+  } */
 
 .bookmark {
   position: absolute;

@@ -18,28 +18,28 @@ nav a:hover svg {
   d: var(--svg-home);
 }
 
-.link-home.__active path {
-  d: var(--svg-home-filled);
-}
-
 .link-bookmarks path {
   d: var(--svg-bookmark);
-}
-
-.link-bookmarks.__active path {
-  d: var(--svg-bookmark-filled);
 }
 
 .link-create path {
   d: var(--svg-create);
 }
 
-.link-create.__active path {
-  d: var(--svg-create-filled);
-}
-
 .link-profile path {
   d: var(--svg-profile);
+}
+
+.link-home.__active path {
+  d: var(--svg-home-filled);
+}
+
+.link-bookmarks.__active path {
+  d: var(--svg-bookmark-filled);
+}
+
+.link-create.__active path {
+  d: var(--svg-create-filled);
 }
 
 .link-profile.__active path {
