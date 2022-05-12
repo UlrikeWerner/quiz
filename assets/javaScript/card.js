@@ -1,19 +1,12 @@
-const cards = document.querySelectorAll('.card');
+import { bookmarkToggle } from './bookmark.js';
+import { buttonShowText } from './cardButton.js';
 
-cards.forEach(card => {
+function questionCards(card) {
   const bookmark = card.querySelector('.bookmark');
-  bookmark.addEventListener('click', () => {
-    bookmark.classList.toggle('marked');
-  });
+  bookmarkToggle(bookmark);
 
   const button = card.querySelector('.button');
-  const answer = card.querySelector('.answer');
-  button.addEventListener('click', () => {
-    answer.classList.toggle('__hidden');
-    if (button.textContent === 'Show Answer') {
-      button.textContent = 'Hide Answer';
-    } else {
-      button.textContent = 'Show Answer';
-    }
-  });
-});
+  buttonShowText(card, button);
+}
+
+export { questionCards };
