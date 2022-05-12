@@ -9,7 +9,7 @@
     "htmlhint": "npx htmlhint \"**/*.html\"",
     "stylelint": "npx stylelint \"**/*.css\"",
     "eslint": "npx eslint \"**/*.js\"",
-    "test": "npm run prettier:write && npm run htmlhint && npm run eslint",
+    "test": "npm run prettier:write && npm run htmlhint && npm run stylelint && npm run eslint",
     "prepare": "husky install"
   },
   "repository": {
