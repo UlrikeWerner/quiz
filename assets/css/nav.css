@@ -6,11 +6,12 @@ nav svg {
   width: 4em;
 }
 
-nav a {
-  text-decoration: none;
+nav button {
+  background: none;
+  border: none;
 }
 
-nav a:hover svg {
+nav button:hover svg {
   fill: var(--hover-color);
 }
 

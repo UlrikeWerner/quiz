@@ -4,7 +4,20 @@
 @import 'layout.css';
 @import 'nav.css';
 @import 'svg.css';
+@import 'tag.css';
 
 * {
   box-sizing: border-box;
+}
+
+button {
+  background-color: var(--action-color);
+}
+
+.__hidden {
+  display: none;
+}
+
+.__visible {
+  display: contents;
 }
