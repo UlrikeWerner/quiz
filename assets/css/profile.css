@@ -1,15 +1,3 @@
-@import 'button.css';
-@import 'color-chart.css';
-@import 'flex.css';
-@import 'layout.css';
-@import 'nav.css';
-@import 'svg.css';
-@import 'tag.css';
-
-* {
-  box-sizing: border-box;
-}
-
 .profile-image {
   width: 30vw;
   border: 2px solid var(--border-color);

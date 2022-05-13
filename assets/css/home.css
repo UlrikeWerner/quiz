@@ -4,6 +4,7 @@
 @import 'layout.css';
 @import 'nav.css';
 @import 'svg.css';
+@import 'tag.css';
 
 * {
   box-sizing: border-box;

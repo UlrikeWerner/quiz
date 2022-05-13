@@ -1,8 +1,9 @@
 import { questionCards } from './assets/javaScript/card.js';
-import { page } from './assets/javaScript/page.js';
+import { navButton } from './assets/javaScript/navButton.js';
 
-const pages = document.querySelectorAll('[data-name="pages"]');
-pages.forEach(page);
+const nav = document.querySelector('nav');
+const navButtons = nav.querySelectorAll('button');
+navButtons.forEach(navButton);
 
 const cards = document.querySelectorAll('.card');
 cards.forEach(questionCards);
