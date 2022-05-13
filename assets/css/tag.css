@@ -3,4 +3,5 @@
   border: 1px solid var(--border-color);
   border-radius: 50vh;
   padding: 0.1em 0.5em;
+  margin-top: 1em;
 }

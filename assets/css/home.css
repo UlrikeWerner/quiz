@@ -9,6 +9,14 @@
   box-sizing: border-box;
 }
 
-/* __hidden {
-  visibility: hidden;
-} */
+button {
+  background-color: var(--action-color);
+}
+
+.__hidden {
+  display: none;
+}
+
+.__visible {
+  display: contents;
+}

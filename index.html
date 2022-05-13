@@ -12,215 +12,147 @@
   </head>
 
   <body>
-    <div name="home">
-      <div class="flex-column body-wrapper">
-        <header class="flex-row justify-content-center">
-          <h1>Quiz-App</h1>
-        </header>
+    <div class="flex-column body-wrapper">
+      <header class="flex-row justify-content-center">
+        <h1>Quiz App</h1>
+      </header>
 
-        <main class="flex-column row-gap-1_2">
-          <section class="card">
-            <div class="bookmark">
-              <svg class="bookmark-background" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </div>
-            <h2>Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              nemo magni quae tenetur illum reicien.
-            </p>
-            <div class="flex-row justify-content-center">
-              <button type="button" class="button">Show Answer</button>
-            </div>
-            <p class="answer __hidden">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates similique exercitationem id
-            </p>
-            <div class="flex-row column-gap-0_8">
-              <button type="button" class="tag">tag</button>
-              <button type="button" class="tag">tag</button>
-            </div>
-          </section>
+      <main>
+        <div data-name="pages" data-roll="home" class="__visible">
+          <div class="flex-column row-gap-1_2">
+            <section class="card">
+              <div class="bookmark">
+                <svg class="bookmark-background" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+              </div>
+              <h2>Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nemo magni quae tenetur illum reicien.
+              </p>
+              <div class="flex-row justify-content-center">
+                <button type="button" class="button">Show Answer</button>
+              </div>
+              <p class="answer __hidden">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique exercitationem id
+              </p>
+              <div class="flex-row column-gap-0_8">
+                <button type="button" class="tag">tag</button>
+                <button type="button" class="tag">tag</button>
+              </div>
+            </section>
 
-          <section class="card">
-            <div class="bookmark">
-              <svg class="bookmark-background" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </div>
-            <h2>Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              nemo magni quae tenetur illum reicien.
-            </p>
-            <div class="flex-row justify-content-center">
-              <button type="button" class="button">Show Answer</button>
-            </div>
-            <p class="answer __hidden">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates similique exercitationem id
-            </p>
-            <div class="flex-row column-gap-0_8">
-              <button type="button" class="tag">tag</button>
-              <button type="button" class="tag">tag</button>
-              <button type="button" class="tag">tag</button>
-              <button type="button" class="tag">tag</button>
-            </div>
-          </section>
+            <section class="card">
+              <div class="bookmark">
+                <svg class="bookmark-background" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+              </div>
+              <h2>Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nemo magni quae tenetur illum reicien.
+              </p>
+              <div class="flex-row justify-content-center">
+                <button type="button" class="button">Show Answer</button>
+              </div>
+              <p class="answer __hidden">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique exercitationem id
+              </p>
+              <div class="flex-row column-gap-0_8">
+                <button type="button" class="tag">tag</button>
+                <button type="button" class="tag">tag</button>
+                <button type="button" class="tag">tag</button>
+                <button type="button" class="tag">tag</button>
+              </div>
+            </section>
 
-          <section class="card">
-            <div class="bookmark">
-              <svg class="bookmark-background" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </div>
-            <h2>Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              nemo magni quae tenetur illum reicien.
-            </p>
-            <div class="flex-row justify-content-center">
-              <button type="button" class="button">Show Answer</button>
-            </div>
-            <p class="answer __hidden">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates similique exercitationem id
-            </p>
-            <div class="flex-row column-gap-0_8">
-              <button type="button" class="tag">tag</button>
-            </div>
-          </section>
-        </main>
+            <section class="card">
+              <div class="bookmark">
+                <svg class="bookmark-background" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+              </div>
+              <h2>Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nemo magni quae tenetur illum reicien.
+              </p>
+              <div class="flex-row justify-content-center">
+                <button type="button" class="button">Show Answer</button>
+              </div>
+              <p class="answer __hidden">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique exercitationem id
+              </p>
+              <div class="flex-row column-gap-0_8">
+                <button type="button" class="tag">tag</button>
+              </div>
+            </section>
+          </div>
+        </div>
 
-        <footer>
-          <nav class="flex-row justify-content-space-around">
-            <a href="/">
-              <svg class="link-home __active" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
+        <div data-name="pages" data-roll="bookmark" class="__hidden">
+          <div class="flex-column row-gap-1_2">
+            <section class="card">
+              <div class="bookmark marked">
+                <svg class="bookmark-background" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+                <svg class="bookmark-outline" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+              </div>
+              <h2>Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nemo magni quae tenetur illum reicien.
+              </p>
+              <div class="flex-row justify-content-center">
+                <button type="button" class="button">Hide Answer</button>
+              </div>
+              <p class="answer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique exercitationem id
+              </p>
+              <div class="flex-row column-gap-0_8">
+                <button type="button" class="tag">tag</button>
+                <button type="button" class="tag">tag</button>
+              </div>
+            </section>
 
-            <a href="./assets/html/bookmarks.html">
-              <svg class="link-bookmarks" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
+            <section class="card">
+              <div class="bookmark marked">
+                <svg class="bookmark-background" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+                <svg class="bookmark-outline" viewBox="0 0 24 24">
+                  <path />
+                </svg>
+              </div>
+              <h2>Question</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+                nemo magni quae tenetur illum reicien.
+              </p>
+              <div class="flex-row justify-content-center">
+                <button type="button" class="button">Hide Answer</button>
+              </div>
+              <p class="answer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates similique exercitationem id
+              </p>
+              <div class="flex-row column-gap-0_8">
+                <button type="button" class="tag">tag</button>
+              </div>
+            </section>
+          </div>
+        </div>
 
-            <a href="./assets/html/create.html">
-              <svg class="link-create" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./assets/html/profile.html">
-              <svg class="link-profile" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-          </nav>
-        </footer>
-      </div>
-    </div>
-
-    <div name="bookmark">
-      <div class="flex-column body-wrapper">
-        <header class="flex-row justify-content-center">
-          <h1>Bookmarks</h1>
-        </header>
-
-        <main class="flex-column row-gap-1_2">
-          <section class="card">
-            <div class="bookmark marked">
-              <svg class="bookmark-background" viewBox="0 0 24 24">
-                <path />
-              </svg>
-              <svg class="bookmark-outline" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </div>
-            <h2>Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              nemo magni quae tenetur illum reicien.
-            </p>
-            <div class="flex-row justify-content-center">
-              <button type="button" class="button">Hide Answer</button>
-            </div>
-            <p class="answer">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates similique exercitationem id
-            </p>
-            <div class="flex-row column-gap-0_8">
-              <button type="button" class="tag">tag</button>
-              <button type="button" class="tag">tag</button>
-            </div>
-          </section>
-
-          <section class="card">
-            <div class="bookmark marked">
-              <svg class="bookmark-background" viewBox="0 0 24 24">
-                <path />
-              </svg>
-              <svg class="bookmark-outline" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </div>
-            <h2>Question</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-              nemo magni quae tenetur illum reicien.
-            </p>
-            <div class="flex-row justify-content-center">
-              <button type="button" class="button">Hide Answer</button>
-            </div>
-            <p class="answer">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates similique exercitationem id
-            </p>
-            <div class="flex-row column-gap-0_8">
-              <button type="button" class="tag">tag</button>
-            </div>
-          </section>
-        </main>
-
-        <footer>
-          <nav class="flex-row justify-content-space-around">
-            <a href="/">
-              <svg class="link-home" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./bookmarks.html">
-              <svg class="link-bookmarks __active" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./create.html">
-              <svg class="link-create" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./profile.html">
-              <svg class="link-profile" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-          </nav>
-        </footer>
-      </div>
-    </div>
-
-    <div name="create">
-      <div class="flex-column body-wrapper">
-        <header class="flex-row justify-content-center">
-          <h1>Create</h1>
-        </header>
-
-        <main>
+        <div data-name="pages" data-roll="create" class="__hidden">
           <section>
             <form
               class="flex-column row-gap-1_2"
@@ -252,45 +184,9 @@
               </div>
             </form>
           </section>
-        </main>
+        </div>
 
-        <footer>
-          <nav class="flex-row justify-content-space-around">
-            <a href="/">
-              <svg class="link-home" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./bookmarks.html">
-              <svg class="link-bookmarks" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./create.html">
-              <svg class="link-create __active" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-
-            <a href="./profile.html">
-              <svg class="link-profile" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-          </nav>
-        </footer>
-      </div>
-    </div>
-
-    <div name="profile">
-      <div class="flex-column body-wrapper">
-        <header class="flex-row justify-content-center">
-          <h1>Profile</h1>
-        </header>
-
-        <main>
+        <div data-name="pages" data-roll="profile" class="__hidden">
           <section class="flex-row align-items-center column-gap-1_5">
             <svg class="profile-image" viewBox="0 0 24 24">
               <path />
@@ -318,36 +214,36 @@
           <div class="flex-row justify-content-center">
             <button type="button" class="button">Logout</button>
           </div>
-        </main>
+        </div>
+      </main>
 
-        <footer>
-          <nav class="flex-row justify-content-space-around">
-            <a href="/">
-              <svg class="link-home" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
+      <footer>
+        <nav class="flex-row justify-content-space-around">
+          <button type="button">
+            <svg class="link-home" viewBox="0 0 24 24">
+              <path />
+            </svg>
+          </button>
 
-            <a href="./bookmarks.html">
-              <svg class="link-bookmarks" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
+          <button type="button">
+            <svg class="link-bookmarks" viewBox="0 0 24 24">
+              <path />
+            </svg>
+          </button>
 
-            <a href="./create.html">
-              <svg class="link-create" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
+          <button type="button">
+            <svg class="link-create" viewBox="0 0 24 24">
+              <path />
+            </svg>
+          </button>
 
-            <a href="./profile.html">
-              <svg class="link-profile __active" viewBox="0 0 24 24">
-                <path />
-              </svg>
-            </a>
-          </nav>
-        </footer>
-      </div>
+          <button type="button">
+            <svg class="link-profile __active" viewBox="0 0 24 24">
+              <path />
+            </svg>
+          </button>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
