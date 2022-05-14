@@ -4,7 +4,7 @@ export function navButton(btn) {
     const navSvgs = document.querySelector('nav').querySelectorAll('svg');
 
     pages.forEach(page => {
-      page.className = '';
+      page.classList.remove('__visible');
     });
     navSvgs.forEach(svg => {
       svg.classList.remove('__active');
