@@ -15,10 +15,6 @@ button {
   background-color: var(--action-color);
 }
 
-.__hidden {
+[data-name='pages']:not(.__visible) {
   display: none;
-}
-
-.__visible {
-  display: contents;
 }

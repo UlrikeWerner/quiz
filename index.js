@@ -2,8 +2,7 @@ import { questionCards } from './assets/javaScript/card.js';
 import { navButton } from './assets/javaScript/navButton.js';
 import { addQuestionEventListener } from './assets/javaScript/create.js';
 
-const nav = document.querySelector('nav');
-const navButtons = nav.querySelectorAll('button');
+const navButtons = document.querySelector('nav').querySelectorAll('button');
 navButtons.forEach(navButton);
 
 const cards = document.querySelectorAll('.card');

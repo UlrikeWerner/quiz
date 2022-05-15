@@ -1,10 +1,10 @@
-function navButton(btn) {
+export function navButton(btn) {
   btn.addEventListener('click', () => {
     const pages = document.querySelectorAll("[data-name='pages']");
     const navSvgs = document.querySelector('nav').querySelectorAll('svg');
 
     pages.forEach(page => {
-      page.className = '__hidden';
+      page.classList.remove('__visible');
     });
     navSvgs.forEach(svg => {
       svg.classList.remove('__active');
@@ -12,27 +12,23 @@ function navButton(btn) {
 
     switch (btn.getAttribute('data-nav-element')) {
       case 'home':
-        pages[0].classList.add('__visible');
-        navSvgs[0].classList.add('__active');
-        document.querySelector('h1').innerHTML = 'Quiz App';
+        setActivePage(pages[0], navSvgs[0], 'Quiz App');
         break;
       case 'bookmark':
-        pages[1].classList.add('__visible');
-        navSvgs[1].classList.add('__active');
-        document.querySelector('h1').innerHTML = 'Bookmarks';
+        setActivePage(pages[1], navSvgs[1], 'Bookmarks');
         break;
       case 'create':
-        pages[2].classList.add('__visible');
-        navSvgs[2].classList.add('__active');
-        document.querySelector('h1').innerHTML = 'Create';
+        setActivePage(pages[2], navSvgs[2], 'Create');
         break;
       case 'profile':
-        pages[3].classList.add('__visible');
-        navSvgs[3].classList.add('__active');
-        document.querySelector('h1').innerHTML = 'Profile';
+        setActivePage(pages[3], navSvgs[3], 'Profile');
         break;
     }
   });
 }
 
-export { navButton };
+function setActivePage(page, navSvg, title) {
+  page.classList.add('__visible');
+  navSvg.classList.add('__active');
+  document.querySelector('h1').innerHTML = title;
+}
