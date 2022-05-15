@@ -1,0 +1,3 @@
+.question-length:not(.question-length--visible) {
+  display: none;
+}
