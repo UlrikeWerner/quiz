@@ -19,138 +19,17 @@
       <main>
         <!-- home page -->
         <div data-name="pages" data-page-name="home" class="page__visible">
-          <div class="flex-column row-gap-1_2">
-            <section class="card">
-              <div class="bookmark">
-                <svg class="bookmark-background" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-              </div>
-              <h2>Question</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                nemo magni quae tenetur illum reicien.
-              </p>
-              <div class="flex-row justify-content-center">
-                <button type="button" class="button">Show Answer</button>
-              </div>
-              <p class="answer __hidden">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates similique exercitationem id
-              </p>
-              <div class="flex-row column-gap-0_8">
-                <button type="button" class="tag">tag</button>
-                <button type="button" class="tag">tag</button>
-              </div>
-            </section>
-
-            <section class="card">
-              <div class="bookmark">
-                <svg class="bookmark-background" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-              </div>
-              <h2>Question</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                nemo magni quae tenetur illum reicien.
-              </p>
-              <div class="flex-row justify-content-center">
-                <button type="button" class="button">Show Answer</button>
-              </div>
-              <p class="answer __hidden">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates similique exercitationem id
-              </p>
-              <div class="flex-row column-gap-0_8">
-                <button type="button" class="tag">tag</button>
-                <button type="button" class="tag">tag</button>
-                <button type="button" class="tag">tag</button>
-                <button type="button" class="tag">tag</button>
-              </div>
-            </section>
-
-            <section class="card">
-              <div class="bookmark">
-                <svg class="bookmark-background" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-              </div>
-              <h2>Question</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                nemo magni quae tenetur illum reicien.
-              </p>
-              <div class="flex-row justify-content-center">
-                <button type="button" class="button">Show Answer</button>
-              </div>
-              <p class="answer __hidden">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates similique exercitationem id
-              </p>
-              <div class="flex-row column-gap-0_8">
-                <button type="button" class="tag">tag</button>
-              </div>
-            </section>
-          </div>
+          <div id="questionCardHolder" class="flex-column row-gap-1_2"></div>
         </div>
+
         <!-- bookmark page -->
         <div data-name="pages" data-page-name="bookmarks" class="">
-          <div class="flex-column row-gap-1_2">
-            <section class="card">
-              <div class="bookmark marked">
-                <svg class="bookmark-background" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-                <svg class="bookmark-outline" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-              </div>
-              <h2>Question</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                nemo magni quae tenetur illum reicien.
-              </p>
-              <div class="flex-row justify-content-center">
-                <button type="button" class="button">Hide Answer</button>
-              </div>
-              <p class="answer">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates similique exercitationem id
-              </p>
-              <div class="flex-row column-gap-0_8">
-                <button type="button" class="tag">tag</button>
-                <button type="button" class="tag">tag</button>
-              </div>
-            </section>
-
-            <section class="card">
-              <div class="bookmark marked">
-                <svg class="bookmark-background" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-                <svg class="bookmark-outline" viewBox="0 0 24 24">
-                  <path />
-                </svg>
-              </div>
-              <h2>Question</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
-                nemo magni quae tenetur illum reicien.
-              </p>
-              <div class="flex-row justify-content-center">
-                <button type="button" class="button">Hide Answer</button>
-              </div>
-              <p class="answer">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates similique exercitationem id
-              </p>
-              <div class="flex-row column-gap-0_8">
-                <button type="button" class="tag">tag</button>
-              </div>
-            </section>
-          </div>
+          <div
+            id="markedQuestionCardHolder"
+            class="flex-column row-gap-1_2"
+          ></div>
         </div>
+
         <!-- create page -->
         <div data-name="pages" data-page-name="create" class="">
           <section>
@@ -192,6 +71,7 @@
             </form>
           </section>
         </div>
+
         <!-- profile page -->
         <div data-name="pages" data-page-name="profile" class="">
           <section class="flex-row align-items-center column-gap-1_5">
