@@ -1,7 +1,24 @@
+import { questions } from './assets/javaScript/questions.js';
+import { createCard } from './assets/javaScript/card.js';
 import { questionCards } from './assets/javaScript/card.js';
 import { navButton } from './assets/javaScript/navButton.js';
 import { addEventListenerToTextField } from './assets/javaScript/create.js';
 
+const markedQuestionCardHolder = document.querySelector(
+  '#markedQuestionCardHolder'
+);
+const questionCardHolder = document.querySelector('#questionCardHolder');
+questions.forEach(question => {
+  const card = createCard(question);
+  questionCardHolder.append(card);
+
+  if (question.isMarked) {
+    const card = createCard(question);
+    markedQuestionCardHolder.append(card);
+  }
+});
+
+/************************************************************/
 const navButtons = document.querySelector('nav').querySelectorAll('button');
 navButtons.forEach(navButton);
 
