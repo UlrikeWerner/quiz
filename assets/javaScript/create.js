@@ -1,13 +1,14 @@
-export function addQuestionEventListener(
+export function addEventListenerToTextField(
   questionInputElement,
   lengthOutputElement
 ) {
   questionInputElement.addEventListener('keyup', () => {
-    lengthOutputElement.value = questionInputElement.value.length;
-    if (lengthOutputElement.value !== '' && lengthOutputElement.value !== '0') {
-      lengthOutputElement.classList.add('question-length--visible');
+    const inputLength = questionInputElement.value.length;
+    lengthOutputElement.value = 'Character: ' + inputLength;
+    if (inputLength !== 0) {
+      lengthOutputElement.classList.add('create-length--visible');
     } else {
-      lengthOutputElement.classList.remove('question-length--visible');
+      lengthOutputElement.classList.remove('create-length--visible');
     }
   });
 }
