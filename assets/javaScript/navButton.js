@@ -1,34 +1,43 @@
 export function navButton(btn) {
   btn.addEventListener('click', () => {
-    const pages = document.querySelectorAll("[data-name='pages']");
-    const navSvgs = document.querySelector('nav').querySelectorAll('svg');
-
-    pages.forEach(page => {
-      page.classList.remove('__visible');
-    });
-    navSvgs.forEach(svg => {
-      svg.classList.remove('__active');
-    });
+    document.querySelector('.page__visible').classList.remove('page__visible');
+    document.querySelector('.nav__active').classList.remove('nav__active');
 
     switch (btn.getAttribute('data-nav-element')) {
       case 'home':
-        setActivePage(pages[0], navSvgs[0], 'Quiz App');
+        setActivePage(
+          document.querySelector('[data-page-name="home"]'),
+          document.querySelector('.link-home'),
+          'Quiz App'
+        );
         break;
       case 'bookmark':
-        setActivePage(pages[1], navSvgs[1], 'Bookmarks');
+        setActivePage(
+          document.querySelector('[data-page-name="bookmarks"]'),
+          document.querySelector('.link-bookmarks'),
+          'Bookmarks'
+        );
         break;
       case 'create':
-        setActivePage(pages[2], navSvgs[2], 'Create');
+        setActivePage(
+          document.querySelector('[data-page-name="create"]'),
+          document.querySelector('.link-create'),
+          'Create'
+        );
         break;
       case 'profile':
-        setActivePage(pages[3], navSvgs[3], 'Profile');
+        setActivePage(
+          document.querySelector('[data-page-name="profile"]'),
+          document.querySelector('.link-profile'),
+          'Profile'
+        );
         break;
     }
   });
 }
 
 function setActivePage(page, navSvg, title) {
-  page.classList.add('__visible');
-  navSvg.classList.add('__active');
+  page.classList.add('page__visible');
+  navSvg.classList.add('nav__active');
   document.querySelector('h1').innerHTML = title;
 }

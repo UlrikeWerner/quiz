@@ -31,18 +31,18 @@ nav button:hover svg {
   d: var(--svg-profile);
 }
 
-.link-home.__active path {
+.link-home.nav__active path {
   d: var(--svg-home-filled);
 }
 
-.link-bookmarks.__active path {
+.link-bookmarks.nav__active path {
   d: var(--svg-bookmark-filled);
 }
 
-.link-create.__active path {
+.link-create.nav__active path {
   d: var(--svg-create-filled);
 }
 
-.link-profile.__active path {
+.link-profile.nav__active path {
   d: var(--svg-profile-filled);
 }
