@@ -16,6 +16,6 @@ button {
   background-color: var(--action-color);
 }
 
-[data-name='pages']:not(.__visible) {
+[data-name='pages']:not(.page__visible) {
   display: none;
 }

@@ -18,7 +18,7 @@
 
       <main>
         <!-- home page -->
-        <div data-name="pages" class="__visible">
+        <div data-name="pages" data-page-name="home" class="page__visible">
           <div class="flex-column row-gap-1_2">
             <section class="card">
               <div class="bookmark">
@@ -95,7 +95,7 @@
           </div>
         </div>
         <!-- bookmark page -->
-        <div data-name="pages" class="">
+        <div data-name="pages" data-page-name="bookmarks" class="">
           <div class="flex-column row-gap-1_2">
             <section class="card">
               <div class="bookmark marked">
@@ -152,7 +152,7 @@
           </div>
         </div>
         <!-- create page -->
-        <div data-name="pages" class="">
+        <div data-name="pages" data-page-name="create" class="">
           <section>
             <form
               class="flex-column row-gap-1_2"
@@ -193,7 +193,7 @@
           </section>
         </div>
         <!-- profile page -->
-        <div data-name="pages" class="">
+        <div data-name="pages" data-page-name="profile" class="">
           <section class="flex-row align-items-center column-gap-1_5">
             <svg class="profile-image" viewBox="0 0 24 24">
               <path />
@@ -227,7 +227,7 @@
       <footer>
         <nav class="flex-row justify-content-space-around">
           <button type="button" data-nav-element="home">
-            <svg class="link-home __active" viewBox="0 0 24 24">
+            <svg class="link-home nav__active" viewBox="0 0 24 24">
               <path />
             </svg>
           </button>
