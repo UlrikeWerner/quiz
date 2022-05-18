@@ -1,17 +1,10 @@
 import { bookmarkToggle } from './bookmark.js';
 import { buttonShowText } from './cardButton.js';
 
-export function questionCards(card) {
-  const bookmark = card.querySelector('.bookmark');
-  bookmarkToggle(bookmark);
-
-  const button = card.querySelector('.button');
-  buttonShowText(card, button);
-}
-
-export function createCard(question) {
+export function createCard(question, index) {
   const card = document.createElement('section');
   card.className = 'card';
+  card.setAttribute('data-question-index', index);
 
   const bookmark = document.createElementNS(
     'http://www.w3.org/2000/svg',
@@ -45,19 +38,25 @@ export function createCard(question) {
 
   const cardAnswer = document.createElement('p');
   cardAnswer.className = 'answer __hidden';
-  cardAnswer.innerText = question.answer;
+  cardAnswer.innerText = question.correct_answer;
   card.appendChild(cardAnswer);
 
   const tagHolder = document.createElement('div');
   tagHolder.className = 'flex-row column-gap-0_8';
-  question.tags.forEach(tag => {
-    const tagButton = document.createElement('button');
-    tagButton.type = 'button';
-    tagButton.className = 'tag';
-    tagButton.innerText = tag;
-    tagHolder.appendChild(tagButton);
-  });
+  tagHolder.appendChild(createTag(question.category));
+  tagHolder.appendChild(createTag(question.difficulty));
   card.appendChild(tagHolder);
 
+  bookmarkToggle(bookmark, index);
+  buttonShowText(card, button);
+
   return card;
+}
+
+function createTag(tag) {
+  const tagButton = document.createElement('button');
+  tagButton.type = 'button';
+  tagButton.className = 'tag';
+  tagButton.innerText = tag;
+  return tagButton;
 }
