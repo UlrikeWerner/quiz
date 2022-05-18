@@ -1,29 +1,14 @@
-import { questions } from './assets/javaScript/questions.js';
-import { createCard } from './assets/javaScript/card.js';
-import { questionCards } from './assets/javaScript/card.js';
-import { navButton } from './assets/javaScript/navButton.js';
+import { navButton, refreshCards } from './assets/javaScript/navButton.js';
 import { addEventListenerToTextField } from './assets/javaScript/create.js';
+import { getQuestions } from './assets/javaScript/questionService.js';
 
-const markedQuestionCardHolder = document.querySelector(
-  '#markedQuestionCardHolder'
-);
-const questionCardHolder = document.querySelector('#questionCardHolder');
-questions.forEach(question => {
-  const card = createCard(question);
-  questionCardHolder.append(card);
+await getQuestions();
 
-  if (question.isMarked) {
-    const card = createCard(question);
-    markedQuestionCardHolder.append(card);
-  }
-});
+refreshCards();
 
 /************************************************************/
 const navButtons = document.querySelector('nav').querySelectorAll('button');
 navButtons.forEach(navButton);
-
-const cards = document.querySelectorAll('.card');
-cards.forEach(questionCards);
 
 const createQuestionField = document.querySelector('#question-input');
 const createQuestionLength = document.querySelector('[name="questionLength"]');
