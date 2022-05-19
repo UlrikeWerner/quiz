@@ -1,10 +1,9 @@
 import { bookmarkToggle } from './bookmark.js';
 import { buttonShowText } from './cardButton.js';
 
-export function createCard(question, index) {
+export function createCard(question, index = 0) {
   const card = document.createElement('section');
   card.className = 'card';
-  card.setAttribute('data-question-index', index);
 
   const bookmark = document.createElementNS(
     'http://www.w3.org/2000/svg',
@@ -24,7 +23,7 @@ export function createCard(question, index) {
   card.appendChild(cardTitle);
 
   const cardQuestion = document.createElement('p');
-  cardQuestion.innerText = question.question;
+  cardQuestion.textContent = question.question;
   card.appendChild(cardQuestion);
 
   const buttonHolder = document.createElement('div');
@@ -38,13 +37,15 @@ export function createCard(question, index) {
 
   const cardAnswer = document.createElement('p');
   cardAnswer.className = 'answer __hidden';
-  cardAnswer.innerText = question.correct_answer;
+  cardAnswer.textContent = question.answer;
   card.appendChild(cardAnswer);
 
   const tagHolder = document.createElement('div');
   tagHolder.className = 'flex-row column-gap-0_8';
-  tagHolder.appendChild(createTag(question.category));
   tagHolder.appendChild(createTag(question.difficulty));
+  question.tags.forEach(tag => {
+    tagHolder.appendChild(createTag(tag));
+  });
   card.appendChild(tagHolder);
 
   bookmarkToggle(bookmark, index);

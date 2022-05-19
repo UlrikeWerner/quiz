@@ -1,3 +1,7 @@
 .create-length:not(.create-length--visible) {
   display: none;
 }
+
+[data-page-name='create'] form {
+  margin-bottom: 1.5em;
+}

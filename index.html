@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <script type="module" src="./index.js" defer></script>
+    <script
+      type="module"
+      src="./assets/javaScript/createQuestionForm.js"
+      defer
+    ></script>
 
     <title>Quiz App</title>
   </head>
@@ -31,7 +36,7 @@
         </div>
 
         <!-- create page -->
-        <div data-name="pages" data-page-name="create" class="">
+        <div data-name="pages" data-page-name="create">
           <section>
             <form
               class="flex-column row-gap-1_2"
@@ -61,15 +66,44 @@
                   readonly
                 />
               </div>
+              <fieldset>
+                <legend>Difficulty</legend>
+                <input
+                  name="difficulty"
+                  value="easy"
+                  id="difficulty-easy"
+                  type="radio"
+                  checked
+                />
+                <label for="difficulty-easy">Easy</label>
+                <input
+                  name="difficulty"
+                  value="medium"
+                  id="difficulty-medium"
+                  type="radio"
+                />
+                <label for="difficulty-medium">Medium</label>
+                <input
+                  name="difficulty"
+                  value="hard"
+                  id="difficulty-hard"
+                  type="radio"
+                />
+                <label for="difficulty-hard">Hard</label>
+              </fieldset>
               <div class="flex-column row-gap-0_5">
                 <label for="tags-input">Tags</label>
                 <input id="tags-input" type="text" name="tags" />
               </div>
               <div class="flex-row justify-content-center">
-                <button type="submit">Submit</button>
+                <button>Submit</button>
               </div>
             </form>
           </section>
+          <div
+            id="createdQuestionCardHolder"
+            class="flex-column row-gap-1_2"
+          ></div>
         </div>
 
         <!-- profile page -->
