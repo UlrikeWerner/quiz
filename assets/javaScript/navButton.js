@@ -51,13 +51,9 @@ export function refreshCards() {
   const markedQuestionCardHolder = document.querySelector(
     '#markedQuestionCardHolder'
   );
-  while (markedQuestionCardHolder.firstChild) {
-    markedQuestionCardHolder.removeChild(markedQuestionCardHolder.lastChild);
-  }
+  markedQuestionCardHolder.innerHTML = '';
   const questionCardHolder = document.querySelector('#questionCardHolder');
-  while (questionCardHolder.firstChild) {
-    questionCardHolder.removeChild(questionCardHolder.lastChild);
-  }
+  questionCardHolder.innerHTML = '';
 
   questions.forEach((question, index) => {
     const card = createCard(question, index);
