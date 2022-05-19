@@ -1,7 +1,7 @@
 import { bookmarkToggle } from './bookmark.js';
 import { buttonShowText } from './cardButton.js';
 
-export function createCard(question, index) {
+export function createCard(question, index = 0) {
   const card = document.createElement('section');
   card.className = 'card';
 

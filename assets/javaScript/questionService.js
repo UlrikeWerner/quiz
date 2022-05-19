@@ -1,5 +1,4 @@
 const triviaApi = 'https://opentdb.com/api.php?amount=15&type=multiple';
-// 'https://opentdb.com/api.php?amount=15&type=multiple&encode=urlLegacy';
 
 export let questions = [];
 
@@ -23,7 +22,7 @@ function createDataArray(apiQuestions) {
       difficulty: question.difficulty,
       tags: [question.category],
     };
-    questions = [newQuestion, ...questions];
+    addQuestion(newQuestion);
   });
 }
 
@@ -31,4 +30,8 @@ function decodeHtml(value) {
   const textArea = document.createElement('textarea');
   textArea.innerHTML = value;
   return textArea.value;
+}
+
+export function addQuestion(question) {
+  questions = [question, ...questions];
 }
